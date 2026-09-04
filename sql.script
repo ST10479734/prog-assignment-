@@ -27,6 +27,20 @@ startpoint VARCHAR(200) NOT NULL);
 CREATE TABLE CATEGORIES (
 category_ID INT IDENTITY (1,1) PRIMARY KEY,
 event_ID INT NOT NULL, 
+
+CREATE TABLE ENROLMENTS (
+enrolment_ID INT IDENTITY(1,1) PRIMARY KEY,
+user_ID INT NOT NULL,
+category_ID INT NOT NULL,
+racenumber VARCHAR(20) NOT NULL,
+paymentstatus VARCHAR(20),
+CONSTRAINT FK_Enrolments_Users 
+FOREIGN KEY (user_ID)
+REFERENCES USERS (user_ID),
+CONSTRAINT FK_Enrolments_Categories FOREIGN KEY (category_ID)
+REFERENCES CATEGORIES (category_ID),
+CONSTRAINT UQ_User_Category UNIQUE (user_ID,category_ID)); 
+
 CONSTRAINT FK_Categories_Events FOREIGN KEY (event_ID)
 REFERENCES EVENTS (event_ID),
 distance DECIMAL (5,2) NOT NULL,
