@@ -1,0 +1,46 @@
+name: RaceDay System CI/CD Pipeline
+
+on:
+  push:
+    branches: [ main, dev ]
+  pull_request:
+    branches: [ main, dev ]
+
+jobs:
+  validate-docs:
+    name: Validate Documentation & Schema
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Verify Documentation Directory Structure
+        run: |
+          test -f docs/API_Endpoint_Plan.md || (echo "Missing API Plan" && exit 1)
+          test -f docs/Database_Script.sql || (echo "Missing Database Script" && exit 1)
+          echo "All required planning documents are present in /docs."
+
+  build-and-test:
+    name: Build & Test Application
+    runs-on: ubuntu-latest
+    needs: validate-docs
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Setup .NET Environment
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Restore Dependencies
+        run: dotnet restore src/api/
+
+      - name: Build API Engine
+        run: dotnet build src/api/ --no-restore
+
+      - name: Run Automated Unit Tests
+        run: dotnet test src/api/ --no-build --verbosity normal
+          echo test, and deploy your project.
