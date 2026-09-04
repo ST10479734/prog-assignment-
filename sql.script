@@ -7,4 +7,12 @@ role varchar(50) not null,
 email varchar (100) not null,
 password varchar (255)not null);
 
-
+create table events(
+event_ID int identity (1,1) primary key,
+organizer_ID int not null,
+CONSTRAINT FK_Events_Users
+FOREIGN KEY (organizer_ID)
+REFERENCES USERS (user_ID),
+eventname VARCHAR(150) NOT NULL, 
+location VARCHAR(200) NOT NULL, 
+eventdate DATETIME NOT NULL);
