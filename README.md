@@ -1,2 +1,4 @@
 # prog-assignment-
 RaceDay bridges the gap between event organizers and participants across South Africa. It replaces manual paper registrations and spreadsheet tracking with an automated, RESTful platform that handles user authentication, event and route management, registrations, payments, and race results.
+
+The platform is backed by Microsoft SQL Server (RaceDayDB). The schema consists of 7 core entities designed with relational integrity and cascading rules:
