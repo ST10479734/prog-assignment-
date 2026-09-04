@@ -7,3 +7,5 @@ EVENTS: Captures race name, organizer mapping, date, and location
 ROUTES: Stores start and endpoint data for specific events (1-to-0..1 optional mapping).
 CATEGORIES: Holds sub-event options (distance, name, event type).
 ENROLMENTS: Maps users to race categories and tracks race numbers and payment status.
+PAYMENT: Manages transaction records linked directly to enrolments (1-to-0..1).
+RESULTS: Records finish times and placements per enrolment (1-to-0..1).
