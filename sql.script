@@ -55,3 +55,12 @@ method VARCHAR(50) NOT NULL,
 CONSTRAINT FK_Payment_Enrolments 
 FOREIGN KEY (enrolment_ID)
 REFERENCES ENROLMENTS(enrolment_ID));
+
+CREATE TABLE RESULTS (
+results_ID INT IDENTITY(1,1) PRIMARY KEY,
+enrolment_ID INT NOT NULL,
+finishtime TIME NOT NULL,
+overallposition INT NOT NULL,
+categoryposition INT NOT NULL,
+CONSTRAINT FK_Results_Enrolments FOREIGN KEY (enrolment_ID)
+REFERENCES ENROLMENTS(enrolment_ID));
