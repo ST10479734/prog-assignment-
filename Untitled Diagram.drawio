@@ -1,0 +1,148 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="gkMk79IQ5ALkyLs-yn9N">
+    <mxGraphModel dx="2321" dy="803" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="rsEy3mKuTL20grDAwUrl-1" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="EVENTS" vertex="1">
+          <mxGeometry height="190" width="130" x="155" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="rsEy3mKuTL20grDAwUrl-24" edge="1" parent="rsEy3mKuTL20grDAwUrl-1" source="rsEy3mKuTL20grDAwUrl-2" style="endArrow=none;html=1;rounded=0;exitX=0.695;exitY=1.011;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="40" y="80" as="sourcePoint" />
+            <mxPoint x="90" y="30" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rsEy3mKuTL20grDAwUrl-2" parent="rsEy3mKuTL20grDAwUrl-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="event_ID&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;PK&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;organizer_ID&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;FK&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;eventname&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;location&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;eventdate&lt;/div&gt;" vertex="1">
+          <mxGeometry height="160" width="130" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rsEy3mKuTL20grDAwUrl-5" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="USERS" vertex="1">
+          <mxGeometry height="200" width="140" x="390" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="rsEy3mKuTL20grDAwUrl-25" edge="1" parent="rsEy3mKuTL20grDAwUrl-5" source="rsEy3mKuTL20grDAwUrl-6" style="endArrow=none;html=1;rounded=0;exitX=0.646;exitY=0.999;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.64;entryY=0.029;entryDx=0;entryDy=0;entryPerimeter=0;" target="rsEy3mKuTL20grDAwUrl-6" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="45" y="90" as="sourcePoint" />
+            <mxPoint x="95" y="40" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rsEy3mKuTL20grDAwUrl-6" parent="rsEy3mKuTL20grDAwUrl-5" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="user_ID&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;PK&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;fullname&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;role&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;email&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;password&lt;/div&gt;" vertex="1">
+          <mxGeometry height="170" width="140" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rsEy3mKuTL20grDAwUrl-9" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="CATEGORIES" vertex="1">
+          <mxGeometry height="190" width="140" x="150" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="rsEy3mKuTL20grDAwUrl-23" edge="1" parent="rsEy3mKuTL20grDAwUrl-9" source="rsEy3mKuTL20grDAwUrl-10" style="endArrow=none;html=1;rounded=0;exitX=0.634;exitY=1.014;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="40" y="80" as="sourcePoint" />
+            <mxPoint x="90" y="30" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rsEy3mKuTL20grDAwUrl-10" parent="rsEy3mKuTL20grDAwUrl-9" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="category_ID&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;PK&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;event_ID&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; FK&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;categoryname&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;distance&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;eventtype&lt;/div&gt;" vertex="1">
+          <mxGeometry height="160" width="140" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rsEy3mKuTL20grDAwUrl-13" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="RESULTS" vertex="1">
+          <mxGeometry height="180" width="140" x="620" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="rsEy3mKuTL20grDAwUrl-22" edge="1" parent="rsEy3mKuTL20grDAwUrl-13" source="rsEy3mKuTL20grDAwUrl-14" style="endArrow=none;html=1;rounded=0;exitX=0.789;exitY=1.023;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="60" y="80" as="sourcePoint" />
+            <mxPoint x="110" y="30" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rsEy3mKuTL20grDAwUrl-14" parent="rsEy3mKuTL20grDAwUrl-13" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="results_ID&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;PK&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;enrolment_ID&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; FK&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;finshtime&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;overallposition&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;categoryposition&lt;/div&gt;" vertex="1">
+          <mxGeometry height="150" width="140" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rsEy3mKuTL20grDAwUrl-17" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="ENROLMENTS" vertex="1">
+          <mxGeometry height="210" width="140" x="390" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="rsEy3mKuTL20grDAwUrl-21" edge="1" parent="rsEy3mKuTL20grDAwUrl-17" source="rsEy3mKuTL20grDAwUrl-18" style="endArrow=none;html=1;rounded=0;exitX=0.646;exitY=1.017;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="40" y="80" as="sourcePoint" />
+            <mxPoint x="90" y="30" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rsEy3mKuTL20grDAwUrl-18" parent="rsEy3mKuTL20grDAwUrl-17" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="enrolment_ID&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; PK&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;user_ID&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;FK&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;category_ID&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; FK&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;enrolmentdate&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;racenumber&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;paymentstatus&lt;/div&gt;" vertex="1">
+          <mxGeometry height="180" width="140" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rsEy3mKuTL20grDAwUrl-26" edge="1" parent="1" source="rsEy3mKuTL20grDAwUrl-2" style="endArrow=none;html=1;rounded=0;exitX=0.995;exitY=0.34;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="290" y="140" as="sourcePoint" />
+            <mxPoint x="390" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rsEy3mKuTL20grDAwUrl-27" edge="1" parent="1" source="rsEy3mKuTL20grDAwUrl-9" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="170" y="295" as="sourcePoint" />
+            <mxPoint x="220" y="245" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rsEy3mKuTL20grDAwUrl-28" edge="1" parent="1" source="rsEy3mKuTL20grDAwUrl-17" style="endArrow=none;html=1;rounded=0;exitX=0.423;exitY=-0.012;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="450" y="355" as="sourcePoint" />
+            <mxPoint x="450" y="255" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rsEy3mKuTL20grDAwUrl-29" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="290" y="440" as="sourcePoint" />
+            <mxPoint x="390" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rsEy3mKuTL20grDAwUrl-30" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="530" y="440" as="sourcePoint" />
+            <mxPoint x="620" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rsEy3mKuTL20grDAwUrl-31" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="1...*&amp;nbsp; &amp;nbsp; plans&amp;nbsp; &amp;nbsp; 1...1" vertex="1">
+          <mxGeometry height="30" width="105" x="285" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="rsEy3mKuTL20grDAwUrl-32" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="1...1&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;create&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;1...*&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="60" x="450" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="rsEy3mKuTL20grDAwUrl-36" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="1...*&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;blongs&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;1...1&lt;/div&gt;" vertex="1">
+          <mxGeometry height="125" width="60" x="220" y="245" as="geometry" />
+        </mxCell>
+        <mxCell id="rsEy3mKuTL20grDAwUrl-37" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="1...*&amp;nbsp; &amp;nbsp;register 1...1&amp;nbsp;" vertex="1">
+          <mxGeometry height="30" width="105" x="290" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="rsEy3mKuTL20grDAwUrl-38" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1...1&amp;nbsp; views&amp;nbsp; 1...*" vertex="1">
+          <mxGeometry height="30" width="105" x="520" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="rsEy3mKuTL20grDAwUrl-39" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="ROUTES" vertex="1">
+          <mxGeometry height="140" width="140" x="-110" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="rsEy3mKuTL20grDAwUrl-40" parent="rsEy3mKuTL20grDAwUrl-39" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="route_ID&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; PK&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;event_ID&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; FK&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;startpoint&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;endpoint&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="140" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rsEy3mKuTL20grDAwUrl-43" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="PAYMENT" vertex="1">
+          <mxGeometry height="180" width="140" x="390" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="rsEy3mKuTL20grDAwUrl-44" parent="rsEy3mKuTL20grDAwUrl-43" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="payment_ID&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;enrolment_ID&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;amout&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;paymentdate&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;method&amp;nbsp;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="150" width="140" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rsEy3mKuTL20grDAwUrl-47" edge="1" parent="1" source="rsEy3mKuTL20grDAwUrl-43" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="410" y="630" as="sourcePoint" />
+            <mxPoint x="460" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rsEy3mKuTL20grDAwUrl-48" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;entryX=-0.011;entryY=0.285;entryDx=0;entryDy=0;entryPerimeter=0;" target="rsEy3mKuTL20grDAwUrl-2" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="30" y="130" as="sourcePoint" />
+            <mxPoint x="80" y="80" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rsEy3mKuTL20grDAwUrl-49" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="0...1&amp;nbsp; &amp;nbsp; &amp;nbsp; defines&amp;nbsp; &amp;nbsp; 1..1" vertex="1">
+          <mxGeometry height="30" width="120" x="30" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="rsEy3mKuTL20grDAwUrl-50" edge="1" parent="1" source="rsEy3mKuTL20grDAwUrl-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;innerLoopWaypoints=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0.909;entryDx=0;entryDy=0;entryPerimeter=0;" target="rsEy3mKuTL20grDAwUrl-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rsEy3mKuTL20grDAwUrl-52" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="1...1&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;generates&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;0...1&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="60" x="460" y="580" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
