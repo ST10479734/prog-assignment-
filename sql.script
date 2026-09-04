@@ -45,3 +45,13 @@ CONSTRAINT FK_Categories_Events FOREIGN KEY (event_ID)
 REFERENCES EVENTS (event_ID),
 distance DECIMAL (5,2) NOT NULL,
 categoryname VARCHAR(50) NOT NULL);
+
+CREATE TABLE PAYMENT(
+payment_ID INT IDENTITY (1, 1) PRIMARY KEY,
+enrolment_ID INT NOT NULL,
+amount DECIMAL (10,2) NOT NULL,
+paymentdate int not null,
+method VARCHAR(50) NOT NULL,
+CONSTRAINT FK_Payment_Enrolments 
+FOREIGN KEY (enrolment_ID)
+REFERENCES ENROLMENTS(enrolment_ID));
