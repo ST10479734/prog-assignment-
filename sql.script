@@ -1,3 +1,5 @@
+CREATE DATABASE raceday;
+
 use raceday
 
 create table users(
@@ -10,57 +12,48 @@ password varchar (255)not null);
 create table events(
 event_ID int identity (1,1) primary key,
 organizer_ID int not null,
-CONSTRAINT FK_Events_Users
-FOREIGN KEY (organizer_ID)
-REFERENCES USERS (user_ID),
+FOREIGN KEY (organizer_ID) REFERENCES users(user_ID),
 eventname VARCHAR(150) NOT NULL, 
 location VARCHAR(200) NOT NULL, 
 eventdate DATETIME NOT NULL);
 
-CREATE TABLE ROUTES (
+CREATE TABLE routes (
 route_ID INT IDENTITY(1,1) PRIMARY KEY,
 event_ID INT NOT NULL,
-CONSTRAINT FK_Routes_Events FOREIGN KEY (event_ID)
-REFERENCES EVENTS(event_ID),
-startpoint VARCHAR(200) NOT NULL);
+FOREIGN KEY (event_ID) REFERENCES events(event_ID),
+startpoint VARCHAR(200) NOT NULL,
+endpoint varchar (200) not null);
 
-CREATE TABLE CATEGORIES (
+CREATE TABLE category (
 category_ID INT IDENTITY (1,1) PRIMARY KEY,
-event_ID INT NOT NULL, 
+categoryname varchar (300),
+event_ID INT NOT NULL,
+FOREIGN KEY (event_ID) REFERENCES events(event_ID),
+distance varchar (100) not null,
+eventtype varchar (200) not null);
 
-CREATE TABLE ENROLMENTS (
+CREATE TABLE enrolment (
 enrolment_ID INT IDENTITY(1,1) PRIMARY KEY,
 user_ID INT NOT NULL,
+FOREIGN KEY (user_ID) REFERENCES users(user_ID),
 category_ID INT NOT NULL,
+FOREIGN KEY (category_ID) REFERENCES category (category_ID),
+enrolment_date date not null,
 racenumber VARCHAR(20) NOT NULL,
-paymentstatus VARCHAR(20),
-CONSTRAINT FK_Enrolments_Users 
-FOREIGN KEY (user_ID)
-REFERENCES USERS (user_ID),
-CONSTRAINT FK_Enrolments_Categories FOREIGN KEY (category_ID)
-REFERENCES CATEGORIES (category_ID),
-CONSTRAINT UQ_User_Category UNIQUE (user_ID,category_ID)); 
-
-CONSTRAINT FK_Categories_Events FOREIGN KEY (event_ID)
-REFERENCES EVENTS (event_ID),
-distance DECIMAL (5,2) NOT NULL,
-categoryname VARCHAR(50) NOT NULL);
+paymentstatus VARCHAR(20));
 
 CREATE TABLE PAYMENT(
 payment_ID INT IDENTITY (1, 1) PRIMARY KEY,
 enrolment_ID INT NOT NULL,
-amount DECIMAL (10,2) NOT NULL,
-paymentdate int not null,
-method VARCHAR(50) NOT NULL,
-CONSTRAINT FK_Payment_Enrolments 
-FOREIGN KEY (enrolment_ID)
-REFERENCES ENROLMENTS(enrolment_ID));
+FOREIGN KEY (enrolment_ID) REFERENCES enrolment(enrolment_ID),
+amount VARCHAR (200) NOT NULL,
+paymentdate date not null,
+method VARCHAR(50) NOT NULL);
 
-CREATE TABLE RESULTS (
+CREATE TABLE results (
 results_ID INT IDENTITY(1,1) PRIMARY KEY,
 enrolment_ID INT NOT NULL,
+FOREIGN KEY (enrolment_ID) REFERENCES enrolment(enrolment_ID),
 finishtime TIME NOT NULL,
 overallposition INT NOT NULL,
-categoryposition INT NOT NULL,
-CONSTRAINT FK_Results_Enrolments FOREIGN KEY (enrolment_ID)
-REFERENCES ENROLMENTS(enrolment_ID));
+categoryposition INT NOT NULL);
